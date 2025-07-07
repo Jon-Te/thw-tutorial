@@ -21,12 +21,10 @@ export class AppComponent {
   // AUFGABE 1a: Erstelle eine Variable für die Anzahl der Einsätze dieses Jahr
   // Tipp: einsaetzeAnzahl = ???;
   einsaetzeAnzahl = 0; // TODO: Setze hier eine Zahl ein!
-  // LÖSUNG: einsaetzeAnzahl = 5;
 
   // AUFGABE 1b: Erstelle eine Variable für dein Lieblings-THW-Fahrzeug
   // Tipp: lieblingsFahrzeug = '???';
   lieblingsFahrzeug = ''; // TODO: Setze hier ein Fahrzeug ein (z.B. 'MLW', 'GKW', 'LKW')
-  // LÖSUNG: lieblingsFahrzeug = 'MLW';
 
 
   // ========== AUFGABE 2: FUNKTIONEN ==========
@@ -42,15 +40,12 @@ export class AppComponent {
   starteEinsatz() {
     // TODO: Erhöhe hier die einsaetzeAnzahl um 1
     // Tipp: this.einsaetzeAnzahl = this.einsaetzeAnzahl + 1;
-    // LÖSUNG: this.einsaetzeAnzahl = this.einsaetzeAnzahl + 1;
-    // ALTERNATIV: this.einsaetzeAnzahl++;
   }
 
   // AUFGABE 2b: Erstelle eine Funktion, die den Helfer begrüßt
   begruesseHelfer() {
     // TODO: Zeige eine Nachricht mit dem Namen des Helfers
     // Tipp: alert('Hallo ' + this.helferName);
-    // LÖSUNG: alert('Hallo ' + this.helferName);
   }
 
 
@@ -69,15 +64,6 @@ export class AppComponent {
     // Wenn einsaetzeAnzahl > 2: empfehle "GKW"
     // Sonst: empfehle "LKW"
 
-    // LÖSUNG:
-    // if (this.einsaetzeAnzahl > 5) {
-    //   return 'MLW';
-    // } else if (this.einsaetzeAnzahl > 2) {
-    //   return 'GKW';
-    // } else {
-    //   return 'LKW';
-    // }
-
     return 'LKW'; // TODO: Ersetze dies durch die if/else Logik!
   }
 
@@ -92,7 +78,6 @@ export class AppComponent {
   fuegeAusruestungHinzu(gegenstand: string) {
     // TODO: Füge den neuen Gegenstand zur Liste hinzu
     // Tipp: this.ausruestung.push('Neuer Gegenstand');
-    // LÖSUNG: this.ausruestung.push(gegenstand);
   }
 
   // AUFGABE 4b: Zähle die Anzahl der Ausrüstungsgegenstände
@@ -100,7 +85,6 @@ export class AppComponent {
     // TODO: Gib die Anzahl der Gegenstände zurück
     // Tipp: return this.ausruestung.length;
     return 0; // TODO: Ersetze 0 durch die richtige Berechnung!
-    // LÖSUNG: return this.ausruestung.length;
   }
 
 
@@ -134,4 +118,48 @@ export class AppComponent {
       });
     }
   }
+
+  // ========== LÖSUNGEN ==========
+  // 🚨 ACHTUNG: Nur schauen, wenn du wirklich nicht weiterkommst! 🚨
+  // Versuche erst selbst, die Aufgaben zu lösen!
+
+  /*
+  LÖSUNG AUFGABE 1a:
+  einsaetzeAnzahl = 5;
+
+  LÖSUNG AUFGABE 1b:
+  lieblingsFahrzeug = 'MLW';
+
+  LÖSUNG AUFGABE 2a:
+  starteEinsatz() {
+    this.einsaetzeAnzahl = this.einsaetzeAnzahl + 1;
+    // ALTERNATIV: this.einsaetzeAnzahl++;
+  }
+
+  LÖSUNG AUFGABE 2b:
+  begruesseHelfer() {
+    alert('Hallo ' + this.helferName);
+  }
+
+  LÖSUNG AUFGABE 3a:
+  empfahleFahrzeug() {
+    if (this.einsaetzeAnzahl > 5) {
+      return 'MLW';
+    } else if (this.einsaetzeAnzahl > 2) {
+      return 'GKW';
+    } else {
+      return 'LKW';
+    }
+  }
+
+  LÖSUNG AUFGABE 4a:
+  fuegeAusruestungHinzu(gegenstand: string) {
+    this.ausruestung.push(gegenstand);
+  }
+
+  LÖSUNG AUFGABE 4b:
+  zaehleAusruestung() {
+    return this.ausruestung.length;
+  }
+  */
 }
